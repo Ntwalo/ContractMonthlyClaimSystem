@@ -1,0 +1,27 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.ApproveClaimWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Approve Claim" Height="400" Width="400">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <StackPanel Margin="10">
+                <TextBlock Text="Claim ID:" Margin="0,0,0,5"/>
+                <TextBox Name="ClaimIDTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Lecturer ID:" Margin="0,0,0,5"/>
+                <TextBox Name="LecturerIDTextBox" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Claim Details:" Margin="0,0,0,5"/>
+                <TextBox Name="ClaimDetailsTextBox" Height="100" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="0,0,0,10"/>
+
+                <TextBlock Text="Status:" Margin="0,0,0,5"/>
+                <ComboBox Name="StatusComboBox" Margin="0,0,0,10">
+                    <ComboBoxItem Content="Pending"/>
+                    <ComboBoxItem Content="Approved"/>
+                </ComboBox>
+
+                <Button Name="ApproveClaimButton" Content="Approve" Click="ApproveClaimButton_Click" Margin="0,20,0,0"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

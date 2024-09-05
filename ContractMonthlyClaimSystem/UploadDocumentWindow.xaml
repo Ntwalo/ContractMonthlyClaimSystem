@@ -1,0 +1,13 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.UploadDocumentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Upload Document" Height="200" Width="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Upload Supporting Documents:" Margin="0,0,0,5"/>
+            <Button Name="BrowseButton" Content="Browse..." Click="BrowseButton_Click" Margin="0,0,0,10"/>
+            <TextBlock Name="SelectedFileTextBlock" Margin="0,0,0,10"/>
+            <Button Name="UploadButton" Content="Upload" Click="UploadButton_Click" Margin="0,20,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
